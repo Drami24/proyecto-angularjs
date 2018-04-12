@@ -1,0 +1,49 @@
+* {
+	margin: 0 auto;
+}
+
+body {
+background: url("fondo.jpg") no-repeat fixed center;
+}
+
+header {
+	width: 930px;
+}
+
+header nav ul {
+	display: flex;
+	flex-wrap: row wrap;
+	justify-content: space-between;
+	list-style: none;
+	text-decoration: none;
+}
+
+header nav {
+	background-color: #ddd;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 3px;
+}
+
+header nav ul li {
+	font-family: 'Jenna Sue';
+	font-size: 200%;
+	margin: 0px;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px;
+}
+
+main {
+	margin-left: 26%;
+}
+
+footer {
+	margin-top:8px;
+	width: 930px;
+	padding: 8px;
+	font-family: 'Jenna Sue';
+	text-align: center;
+	border-radius: 12px;
+	background-color: #A9CCE3;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 3px;
+}

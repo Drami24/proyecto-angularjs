@@ -1,28 +1,57 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="app">
-
+<html lang="es" ng-app="almacenApp">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ONG</title>
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="css/estilos.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AngularJS</title>
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
+<body ng-controller="mainCtrl">
+	<header>
+		<nav>
+		    <ul>
+		        <li><a href="#">Inicio</a></li>
+		        <li><a href="#inventario">Inventario</a></li>
+		        <li><a href="#contacto">Contacto</a></li>
+		        <!-- <li><a href="#acercade">Acerca de </a></li> -->
+		        <li><a href="#registro">Registro</a></li>
+		        <li><a href="#perfil">Perfil</a></li>
+		    </ul>
+		</nav>
+	</header>
+	
+<!--<div>
+		<lista-articulos></lista-articulos>
+	</div> -->
 
-<body ng-controller="PrincipalController">
+	<!-- <div>
+    	<button ng-click="obtenerGatos()">Obtener listado</button>
+    </div> -->
 
-  <div>
-    <lista-articulos></lista-articulos>
-  </div>
+   <!--  <div>
+        <ul>
+			<li ng-repeat="gato in gatos">
+				Nombre del gato: <strong>{{gato.nombre}}</strong> - {{ gato.edad }} años 
+				({{ gato.sexo}} - Color: {{gato.color}} - En estado de : {{gato.estado}})
+            </li>
+        </ul>
+    </div> -->
+	
+	<main>
+		<div ng-view></div>
+	</main>
+    
 
-  <script src="plugins/jquery.js"></script>
-  <script src="plugins/bootstrap/js/bootstrap.js"></script>
-  <script src="plugins/angular.js"></script>
-  <script src="plugins/angular-route.js"></script>
-  <script src="plugins/ngStorage.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/articulos.js"></script>
-  <script src="js/protos.js"></script>
+	<footer>2017-2018 &copy; Damián Lores</footer>
+
+	<script src="plugins/jquery.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.js"></script>
+	<script src="plugins/angular.js"></script>
+	<script src="plugins/angular-route.js"></script>
+	<script src="plugins/ngStorage.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/articulos.js"></script>
+	<script src="js/protos.js"></script>
 </body>
-
 </html>
